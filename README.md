@@ -1,5 +1,7 @@
 # 炽天使文明模拟
 
+[English](README_en.md)
+
 Seraph Civilization Simulation（`vsscsmod`），版本 **1.0.0**。
 
 适用于 Vintage Story 1.22.3 及以上版本，当前验证版本为 1.22.7。客户端和服务端均需安装。
