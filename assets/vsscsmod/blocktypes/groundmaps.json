@@ -1,0 +1,14 @@
+{
+  "code": "groundmaps",
+  "class": "VscnGroundMap",
+  "entityClass": "VscnGroundMap",
+  "shape": { "base": "vsscsmod:block/groundmaps" },
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "blockmaterial": "Cloth",
+  "lightAbsorption": 0,
+  "replaceable": 0,
+  "collisionBoxes": [],
+  "selectionBoxes": [],
+  "drops": []
+}

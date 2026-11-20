@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefaultItemExcludes>$(DefaultItemExcludes);tests\bin\**;tests\obj\**</DefaultItemExcludes>
+    <AssemblyName>vsscsmod</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>HansJack</Authors>
+    <Copyright>Copyright (c) 2026 HansJack</Copyright>
+    <OutputPath>bin\$(Configuration)\Mods\vsscsmod</OutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">E:\vintagestory\Vintagestory</VINTAGE_STORY>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+    <Reference Include="VintagestoryAPI" HintPath="$(VINTAGE_STORY)\VintagestoryAPI.dll" Private="false" />
+    <Reference Include="VintagestoryLib" HintPath="$(VINTAGE_STORY)\VintagestoryLib.dll" Private="false" />
+    <Reference Include="VSSurvivalMod" HintPath="$(VINTAGE_STORY)\Mods\VSSurvivalMod.dll" Private="false" />
+    <Reference Include="VSEssentials" HintPath="$(VINTAGE_STORY)\Mods\VSEssentials.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(VINTAGE_STORY)\Lib\0Harmony.dll" Private="false" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(VINTAGE_STORY)\Lib\Newtonsoft.Json.dll" Private="false" />
+    <Reference Include="protobuf-net" HintPath="$(VINTAGE_STORY)\Lib\protobuf-net.dll" Private="false" />
+    <Reference Include="cairo-sharp" HintPath="$(VINTAGE_STORY)\Lib\cairo-sharp.dll" Private="false" />
+    <Reference Include="SkiaSharp" HintPath="$(VINTAGE_STORY)\Lib\SkiaSharp.dll" Private="false" />
+    <Content Include="modinfo.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="assets\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="THIRD-PARTY-NOTICES.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="1.4.1" />
+    <PackageReference Include="AngleSharp" Version="1.8.5" />
+  </ItemGroup>
+</Project>

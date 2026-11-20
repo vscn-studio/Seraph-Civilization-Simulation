@@ -1,0 +1,13 @@
+{
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Code",
+  "modid": "vsscsmod",
+  "name": "Seraph Civilization Simulation",
+  "side": "Universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true,
+  "authors": ["HansJack"],
+  "description": "A dedicated mod for Seraph Civilization Simulation.",
+  "version": "1.0.0",
+  "dependencies": { "game": "1.22.3" }
+}

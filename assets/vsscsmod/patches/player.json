@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/0",
+    "value": { "code": "vscncs.respawn" },
+    "file": "game:entities/humanoid/player.json",
+    "side": "Server"
+  }
+]

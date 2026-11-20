@@ -1,0 +1,37 @@
+[
+  {
+    "op": "replace",
+    "path": "/hitBoxSizeByType/*-adult-*-ferus/x",
+    "value": 0.9,
+    "file": "equusferus:entities/ferus/ferus.json",
+    "dependsOn": [{ "modid": "equusferus" }]
+  },
+  {
+    "op": "add",
+    "path": "/hitBoxSizeByType",
+    "value": { "*-adult-*-ferus": { "x": 1.05, "y": 1.9, "z": 3.0 } },
+    "file": "equusferus:entities/ferus/ferus-wild.json",
+    "dependsOn": [{ "modid": "equusferus" }]
+  },
+  {
+    "op": "add",
+    "path": "/hitBoxSizeByType",
+    "value": { "*-adult-*-ferus": { "x": 1.05, "y": 1.9, "z": 3.0 } },
+    "file": "equusferus:entities/ferus/ferus-unhandled.json",
+    "dependsOn": [{ "modid": "equusferus" }]
+  },
+  {
+    "op": "replace",
+    "path": "/hitboxSize/x",
+    "value": 0.9,
+    "file": "primitivesurvival:entities/land/crab-bairdicrab.json",
+    "dependsOn": [{ "modid": "primitivesurvival" }]
+  },
+  {
+    "op": "replace",
+    "path": "/hitboxSize/x",
+    "value": 0.9,
+    "file": "primitivesurvival:entities/land/snake-chainviper.json",
+    "dependsOn": [{ "modid": "primitivesurvival" }]
+  }
+]

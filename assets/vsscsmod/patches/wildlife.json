@@ -1,0 +1,15 @@
+[
+  {
+    "op": "replace",
+    "path": "/hitboxSize/x",
+    "value": 0.95,
+    "file": "game:entities/animal/mammal/wolf-adult.json"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": { "code": "vscncs.bearblockbreak" },
+    "file": "game:entities/animal/mammal/bear-adult.json",
+    "side": "Server"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "type": "Code",
+  "modid": "wildlifesmoke",
+  "name": "Isolated native wildlife regression harness",
+  "version": "1.0.0",
+  "side": "Server",
+  "dependencies": { "game": "1.22.7", "vscncivilizationsimulation": "1.2.17" }
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "op": "replace", "path": "/walkspeedmultiplier", "value": 1.3,
+    "file": "chiseltools:blocktypes/pathedchiseledblock.json", "dependsOn": [{ "modid": "chiseltools" }]
+  },
+  {
+    "op": "add", "path": "/climbable", "value": false,
+    "file": "chiseltools:blocktypes/climbablechiseledblock.json", "dependsOn": [{ "modid": "chiseltools" }]
+  },
+  {
+    "op": "replace", "path": "/vertexFlags/glowLevel", "value": 48,
+    "file": "chiseltools:blocktypes/halfcreativelight.json", "dependsOn": [{ "modid": "chiseltools" }]
+  },
+  {
+    "op": "replace", "path": "/lightHsvByType", "value": {
+      "*-32": [0, 7, 5], "*-33": [2, 7, 5], "*-34": [4, 7, 5], "*-35": [6, 7, 5],
+      "*-36": [8, 7, 5], "*-37": [10, 7, 5], "*-38": [12, 7, 5], "*-39": [14, 7, 5],
+      "*-40": [16, 7, 5], "*-41": [18, 7, 5], "*-42": [20, 7, 5], "*-43": [22, 7, 5],
+      "*-44": [22, 7, 5], "*-45": [26, 7, 5], "*-46": [28, 7, 5], "*-47": [30, 7, 5],
+      "*-48": [32, 7, 5], "*-49": [34, 7, 5], "*-50": [36, 7, 5], "*-51": [38, 7, 5],
+      "*-52": [40, 7, 5], "*-53": [42, 7, 5], "*-54": [44, 7, 5], "*-55": [46, 7, 5],
+      "*-56": [48, 7, 5], "*-57": [50, 7, 5], "*-58": [52, 7, 5], "*-59": [54, 7, 5],
+      "*-79": [0, 0, 5]
+    },
+    "file": "chiseltools:blocktypes/halfcreativelight.json", "dependsOn": [{ "modid": "chiseltools" }]
+  },
+  {
+    "op": "add", "path": "/lightHsvByType", "value": { "*": [0, 0, 0] },
+    "file": "chiseltools:itemtypes/jonaspaintbrush.json", "dependsOn": [{ "modid": "chiseltools" }]
+  }
+]
